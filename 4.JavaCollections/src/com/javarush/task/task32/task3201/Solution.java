@@ -36,10 +36,10 @@ public class Solution {
 
             if (length < number) {
                 raf.seek(length-1);
-                raf.writeBytes(text);
+                raf.write(text.getBytes());
             } else {
                 raf.seek(number);
-                raf.writeBytes(text);
+                raf.write(text.getBytes());
             }
         } catch (IOException e) {
             e.printStackTrace();
