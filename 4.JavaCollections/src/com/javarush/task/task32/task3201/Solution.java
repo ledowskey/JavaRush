@@ -35,7 +35,7 @@ public class Solution {
             long length = raf.length();
 
             if (length < number) {
-                raf.seek(length-1);
+                raf.seek(length);
                 raf.write(text.getBytes());
             } else {
                 raf.seek(number);
